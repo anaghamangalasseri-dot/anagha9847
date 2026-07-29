@@ -209,6 +209,11 @@ nav ul li a:hover{
 .skill-card h3{
     font-size:20px;
 }
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
 
 
 
