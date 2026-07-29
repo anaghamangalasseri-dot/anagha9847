@@ -105,3 +105,34 @@ nav ul li a:hover{
     object-fit:cover;
     border:5px solid #38bdf8;
 }
+/* About Section */
+
+.about{
+    padding:100px 8%;
+}
+
+.about-content{
+    max-width:900px;
+    margin:auto;
+    background:rgba(255,255,255,.08);
+    padding:40px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.about h2{
+    text-align:center;
+    color:#38bdf8;
+    margin-bottom:25px;
+    font-size:38px;
+}
+
+.about p{
+    line-height:1.9;
+    font-size:18px;
+    margin-bottom:18px;
+    color:#e2e8f0;
+}
+
+
