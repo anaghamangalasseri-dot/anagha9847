@@ -1021,6 +1021,61 @@ grid-template-columns:1fr;
 background:var(--primary);
 color:#fff;
 }
+/* ===== Active Menu ===== */
+
+.sidebar a.active{
+    background:linear-gradient(45deg,#4facfe,#7b61ff);
+    color:#fff;
+}
+
+/* ===== Light Mode ===== */
+
+body.light{
+    background:#f5f7fb;
+    color:#222;
+}
+
+body.light .sidebar{
+    background:#ffffff;
+}
+
+body.light .card,
+body.light .project-card,
+body.light .skill-card,
+body.light .timeline-item{
+    background:#ffffff;
+    color:#222;
+}
+
+body.light p{
+    color:#555;
+}
+
+/* ===== Ripple Effect ===== */
+
+.btn,
+.btn2{
+    position:relative;
+    overflow:hidden;
+}
+
+.ripple{
+    position:absolute;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:rgba(255,255,255,.7);
+    transform:translate(-50%,-50%) scale(0);
+    animation:ripple .6s linear;
+    pointer-events:none;
+}
+
+@keyframes ripple{
+    to{
+        transform:translate(-50%,-50%) scale(25);
+        opacity:0;
+    }
+}
 
 /* ===========================================
    END
