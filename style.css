@@ -251,6 +251,40 @@ html{
 .project-card p{
     line-height:1.8;
 }
+/* Contact */
+
+.contact{
+    padding:100px 8%;
+}
+
+.contact h2{
+    text-align:center;
+    color:#38bdf8;
+    font-size:38px;
+    margin-bottom:40px;
+}
+
+.contact-card{
+    max-width:800px;
+    margin:auto;
+    background:rgba(255,255,255,.08);
+    padding:35px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,.1);
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.contact-card h3{
+    color:#38bdf8;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.contact-card p{
+    margin:15px 0;
+    line-height:1.8;
+    font-size:18px;
+}
 
 
 
