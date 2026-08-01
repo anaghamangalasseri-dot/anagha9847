@@ -33,18 +33,33 @@ scroll-behavior:smooth;
 }
 
 body{
+    font-family:'Poppins',sans-serif;
+    color:#fff;
+    overflow-x:hidden;
 
-font-family:'Poppins',sans-serif;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(79,172,254,.18), transparent 30%),
+        radial-gradient(circle at 85% 80%, rgba(123,97,255,.18), transparent 30%),
+        linear-gradient(135deg,#050b16,#0b1628,#16233d);
 
-background:
-linear-gradient(135deg,#07111f,#101f37,#132b4f);
+    background-size:300% 300%;
+    animation:bgMove 18s ease infinite;
+}
+@keyframes bgMove{
 
-color:white;
-
-overflow-x:hidden;
-
+0%{
+background-position:0% 50%;
 }
 
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
 /* Scrollbar */
 
 ::-webkit-scrollbar{
@@ -118,89 +133,41 @@ z-index:9999;
 }
 
 /* Sidebar */
-
 .sidebar{
-
-position:fixed;
-
-left:0;
-top:0;
-
-width:260px;
-height:100vh;
-
-padding:35px;
-
-background:rgba(255,255,255,.06);
-
-backdrop-filter:blur(25px);
-
-border-right:1px solid rgba(255,255,255,.08);
-
-display:flex;
-flex-direction:column;
-
-}
-
-.logo{
-
-margin-bottom:60px;
-
-}
-
-.logo h2{
-
-font-size:34px;
-font-weight:800;
-
-}
-
-.logo span{
-
-color:#4facfe;
-
-}
-
-.sidebar ul{
-
-list-style:none;
-
-}
-
-.sidebar li{
-
-margin:22px 0;
-
+    position:fixed;
+    left:20px;
+    top:20px;
+    bottom:20px;
+    width:250px;
+    padding:35px 25px;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(25px);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:28px;
+    box-shadow:0 25px 60px rgba(0,0,0,.45);
+    z-index:999;
 }
 
 .sidebar a{
-
-color:white;
-
-text-decoration:none;
-
 display:flex;
-
 align-items:center;
-
-gap:15px;
-
-padding:14px;
-
-border-radius:15px;
-
+gap:14px;
+padding:14px 18px;
+margin:8px 0;
+border-radius:16px;
+color:#fff;
+text-decoration:none;
 transition:.35s;
-
+font-weight:500;
 }
 
 .sidebar a:hover{
-
-background:rgba(79,172,254,.18);
-
+background:linear-gradient(90deg,
+rgba(79,172,254,.25),
+rgba(123,97,255,.18));
 transform:translateX(8px);
-
+box-shadow:0 10px 30px rgba(79,172,254,.25);
 }
-
 /* Main */
 
 .main{
