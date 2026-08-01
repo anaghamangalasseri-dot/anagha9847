@@ -3,197 +3,373 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anagha M | Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+    <title>Anagha M | Premium Portfolio</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <h2 class="logo">Anagha.</h2>
+<!-- Loader -->
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<div id="loader">
+    <div class="loader-circle"></div>
+</div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
+<!-- Progress Bar -->
 
-        <div class="hero-text">
-            <h3>Hello, I'm</h3>
-            <h1>Anagha M</h1>
-            <h2>BCA Second Year Student</h2>
+<div id="progressBar"></div>
 
-            <p>
-                I am a BCA student at GEMS Arts & Science College, Ramapuram.
-                I enjoy learning programming, web development, and exploring new technologies.
-                My goal is to become a software developer.
-            </p>
+<!-- Sidebar -->
 
-            <a href="#about" class="btn">Explore Portfolio</a>
+<aside class="sidebar">
+
+    <div class="logo">
+        <h2>Anagha<span>.</span></h2>
+    </div>
+
+    <ul>
+
+        <li><a href="#home"><i class="ri-home-5-line"></i> Home</a></li>
+
+        <li><a href="#about"><i class="ri-user-line"></i> About</a></li>
+
+        <li><a href="#education"><i class="ri-graduation-cap-line"></i> Education</a></li>
+
+        <li><a href="#skills"><i class="ri-code-box-line"></i> Skills</a></li>
+
+        <li><a href="#projects"><i class="ri-folder-line"></i> Projects</a></li>
+
+        <li><a href="#contact"><i class="ri-mail-line"></i> Contact</a></li>
+
+    </ul>
+    <button id="themeToggle" class="btn">
+    🌙
+</button>
+
+</aside>
+
+<!-- Main -->
+
+<div class="main">
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+
+    <div class="hero-left" data-aos="fade-right">
+
+        <span class="hero-tag">
+            <i class="ri-sparkling-2-fill"></i>
+            Welcome To My Portfolio
+        </span>
+
+        <h1>
+            Hi,<br>
+            I'm <span>Anagha M</span>
+        </h1>
+
+        <h3 class="typing"></h3>
+
+        <p>
+            BCA Student passionate about web development,
+            programming and creating modern responsive websites.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#projects" class="btn">
+                <i class="ri-folder-open-line"></i>
+                View Projects
+            </a>
+
+            <a href="#" class="btn2">
+                <i class="ri-download-line"></i>
+                Download Resume
+            </a>
+
         </div>
 
-        <div class="hero-image">
+        <div class="social">
+
+            <a href="#"><i class="ri-github-fill"></i></a>
+
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+
+            <a href="#"><i class="ri-instagram-line"></i></a>
+
+            <a href="#"><i class="ri-mail-line"></i></a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-right" data-aos="zoom-in">
+
+        <div class="profile-card">
+
+            <div class="glow-circle"></div>
+
             <img src="images/profile.jpg" alt="Anagha">
+
         </div>
-
-    </section>
-    <!-- About Section -->
-<section id="about" class="about">
-
-    <div class="about-content">
-
-        <h2>About Me</h2>
-
-        <p>
-            Hello! I'm <strong>Anagha M</strong>, a second-year BCA student at
-            GEMS Arts & Science College, Ramapuram.
-        </p>
-
-        <p>
-            I enjoy learning programming and web development. I have basic
-            knowledge of C, C++, Java, HTML, and SQL, and I am continuously
-            improving my skills by learning and practising.
-        </p>
-
-        <p>
-            My goal is to become a skilled Software Developer and build useful,
-            creative, and user-friendly applications in the future.
-        </p>
 
     </div>
 
 </section>
-    <!-- Education Section -->
+<!-- ABOUT -->
+
+<section id="about" class="about">
+
+<div class="title">
+
+<h2>About Me</h2>
+
+</div>
+
+<div class="about-grid">
+
+<div class="about-text" data-aos="fade-up">
+
+<p>
+
+Hello!
+
+I'm <strong>Anagha M</strong>, a second-year BCA student at
+Gems Arts and Science College.
+
+I enjoy learning programming languages,
+building websites,
+and improving my development skills every day.
+
+</p>
+
+<p>
+
+My goal is to become a professional software developer
+and create useful applications that solve real-world problems.
+
+</p>
+
+</div>
+
+<div class="stats">
+
+<div class="card">
+
+<h3>02+</h3>
+
+<p>Years Learning</p>
+
+</div>
+
+<div class="card">
+
+<h3>06+</h3>
+
+<p>Skills</p>
+
+</div>
+
+<div class="card">
+
+<h3>01</h3>
+
+<p>Major Project</p>
+
+</div>
+
+<div class="card">
+
+<h3>100%</h3>
+
+<p>Passion</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- EDUCATION -->
+
 <section id="education" class="education">
 
-    <h2>Education</h2>
+    <div class="title">
+        <h2>Education</h2>
+    </div>
 
     <div class="timeline">
 
-        <div class="timeline-item">
-            <h3>Bachelor of Computer Applications (BCA)</h3>
-            <h4>GEMS Arts & Science College, Ramapuram</h4>
-            <p>2025 - Present (Second Year)</p>
-            <p>Learning C Programming, Web Development, Database Management and Computer Science fundamentals.</p>
+        <div class="timeline-item" data-aos="fade-up">
+            <div class="year">2025 - Present</div>
+            <div class="content">
+                <h3>Bachelor of Computer Applications (BCA)</h3>
+                <p>Gems Arts and Science College</p>
+                <p>Learning programming, databases, web development and software concepts.</p>
+            </div>
         </div>
 
-        <div class="timeline-item">
-            <h3>Higher Secondary Education</h3>
-            <h4>Computer Commerce</h4>
-            <p>Completed with Computer Application as a major subject.</p>
-            <p>Learned HTML, C++, Java and SQL basics.</p>
+        <div class="timeline-item" data-aos="fade-up">
+            <div class="year">Higher Secondary</div>
+            <div class="content">
+                <h3>Computer Commerce</h3>
+                <p>Focused on Computer Applications, HTML, SQL and C++ fundamentals.</p>
+            </div>
         </div>
 
     </div>
 
 </section>
-    <!-- Skills Section -->
+
+<!-- SKILLS -->
+
 <section id="skills" class="skills">
 
-    <h2>My Skills</h2>
+    <div class="title">
+        <h2>Skills</h2>
+    </div>
 
-    <div class="skills-container">
-
-        <div class="skill-card">
-            <h3>C Programming</h3>
-        </div>
+    <div class="skills-grid">
 
         <div class="skill-card">
             <h3>HTML</h3>
+            <div class="bar"><span style="width:95%"></span></div>
         </div>
 
         <div class="skill-card">
             <h3>CSS</h3>
+            <div class="bar"><span style="width:90%"></span></div>
         </div>
 
         <div class="skill-card">
-            <h3>Java</h3>
+            <h3>JavaScript</h3>
+            <div class="bar"><span style="width:75%"></span></div>
+        </div>
+
+        <div class="skill-card">
+            <h3>C</h3>
+            <div class="bar"><span style="width:85%"></span></div>
         </div>
 
         <div class="skill-card">
             <h3>C++</h3>
+            <div class="bar"><span style="width:80%"></span></div>
         </div>
 
         <div class="skill-card">
             <h3>SQL</h3>
-        </div>
-
-        <div class="skill-card">
-            <h3>GitHub</h3>
-        </div>
-
-        <div class="skill-card">
-            <h3>Learning JavaScript</h3>
+            <div class="bar"><span style="width:85%"></span></div>
         </div>
 
     </div>
 
 </section>
- <!-- Projects Section -->
+
+<!-- PROJECTS -->
+
 <section id="projects" class="projects">
 
-    <h2>Projects</h2>
+    <div class="title">
+        <h2>Projects</h2>
+    </div>
 
-    <div class="project-container">
+    <div class="project-grid">
 
-        <div class="project-card">
-            <h3>🏦 Bank Management System</h3>
+        <div class="project-card" data-aos="zoom-in">
+
+            <h3>Bank Management System</h3>
 
             <p>
-                Group academic project developed using C Programming.
-                I actively contributed to the project and completed most of the coding.
-                The system includes account creation, deposit, withdrawal,
-                balance enquiry, and record management.
+                Academic project developed using C Programming.
+                Features include account creation, deposit,
+                withdrawal, balance enquiry and record management.
             </p>
+
+            <a href="#" class="btn">
+                View Project
+            </a>
 
         </div>
 
     </div>
 
-</section>  
-    <!-- Contact Section -->
+</section>
+
+<!-- CONTACT -->
+
 <section id="contact" class="contact">
 
-    <h2>Contact</h2>
+    <div class="title">
+        <h2>Contact</h2>
+    </div>
 
-    <div class="contact-card">
+    <form>
 
-        <h3>Get In Touch</h3>
+        <input type="text" placeholder="Your Name" required>
 
-        <p><strong>Name:</strong> Anagha M</p>
+        <input type="email" placeholder="Email Address" required>
 
-        <p><strong>Email:</strong> anaghamangalasseri@gmail.com</p>
+        <textarea rows="6" placeholder="Your Message"></textarea>
 
-        <p><strong>Phone:</strong> +91 8848600753</p>
+        <button class="btn">
+            Send Message
+        </button>
 
-        <p><strong>Address:</strong> Anugraham (H), Punnakuzhi, Karuvambram (P.O), Manjeri, Malappuram, Kerala</p>
+    </form>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h3>Anagha M</h3>
+
+    <p>BCA Student | Web Developer | Programmer</p>
+
+    <div class="social">
+
+        <a href="#"><i class="ri-github-fill"></i></a>
+
+        <a href="#"><i class="ri-linkedin-fill"></i></a>
+
+        <a href="#"><i class="ri-instagram-line"></i></a>
+
+        <a href="#"><i class="ri-mail-line"></i></a>
 
     </div>
 
-</section>
-    
-   <footer class="footer">
-    <p>© 2026 Anagha M | BCA Student | Made with HTML, CSS & JavaScript</p>
-</footer> 
-    
+    <p>
+        © 2026 Anagha M. All Rights Reserved.
+    </p>
 
-    <script src="script.js"></script>
+</footer>
+
+</div>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration:1000,
+    once:true
+});
+</script>
+
+<script src="script2.js"></script>
+    <button id="topBtn">↑</button>
 
 </body>
 </html>
