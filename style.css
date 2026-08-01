@@ -285,7 +285,16 @@ html{
     line-height:1.8;
     font-size:18px;
 }
+/* Footer */
 
+.footer{
+    text-align:center;
+    padding:25px;
+    margin-top:60px;
+    border-top:1px solid rgba(255,255,255,.1);
+    color:#cbd5e1;
+    font-size:15px;
+}
 
 
 
