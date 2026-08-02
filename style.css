@@ -193,15 +193,16 @@ min-height:100vh;
 gap:70px;
 
 }
+.hero-left{
+    display: flex;
+    flex-direction: column;
+}
 
 .hero h1{
-
-font-size:60px;
-
-font-weight:800;
-
-line-height:1.1;
-
+    font-size:72px;
+    line-height:1.2;
+    margin-bottom:10px;
+    white-space: nowrap;
 }
 
 .hero span{
@@ -215,15 +216,11 @@ background:linear-gradient(90deg,#4facfe,#7b61ff);
 }
 
 .typing{
-
-margin:20px 0;
-
-font-size:24px;
-
-color:#4facfe;
-
-font-weight:600;
-
+    margin:10px 0 20px;
+    font-size:24px;
+    color:#4facfe;
+    font-weight:600;
+    min-height:30px;
 }
 
 .hero p{
