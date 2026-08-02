@@ -734,13 +734,21 @@ left:100%;
 }
 
 .project-card:hover{
-transform:translateY(-10px);
+    transform:translateY(-12px) scale(1.03);
+    box-shadow:
+        0 20px 40px rgba(79,172,254,.25),
+        0 0 35px rgba(123,97,255,.20);
 }
 
 .project-card h3{
-font-size:24px;
-margin-bottom:15px;
-color:var(--primary);
+    font-size:24px;
+    margin-bottom:15px;
+    color:var(--primary);
+    transition:.3s;
+}
+
+.project-card:hover h3{
+    text-shadow:0 0 15px rgba(79,172,254,.6);
 }
 
 .project-card p{
