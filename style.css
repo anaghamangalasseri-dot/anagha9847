@@ -1060,9 +1060,10 @@ body.light p{
 }
 
 .hero h1{
-    font-size:72px;
-    line-height:1.1;
-    margin-bottom:20px;
+    font-size:64px;
+    line-height:1.2;
+    margin-bottom:10px;
+    white-space: nowrap;
 }
 
 .hero p{
