@@ -1104,3 +1104,23 @@ opacity:1;
     position:relative;
     z-index:2;
 }
+/* ===== Premium Name Glow ===== */
+
+.hero h1 span{
+    background: linear-gradient(90deg,#4facfe,#7b61ff,#4facfe);
+    background-size:200% auto;
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    animation: glowText 3s linear infinite;
+
+    text-shadow:
+        0 0 15px rgba(79,172,254,.4);
+}
+
+@keyframes glowText{
+    to{
+        background-position:200% center;
+    }
+}
