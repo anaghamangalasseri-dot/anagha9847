@@ -1132,3 +1132,19 @@ opacity:1;
         background-position:200% center;
     }
 }
+.skill-card i{
+    font-size:55px;
+    margin-bottom:18px;
+    display:block;
+    transition:.5s;
+    filter:drop-shadow(0 0 15px rgba(79,172,254,.35));
+}
+
+.skill-card:hover i{
+    transform:scale(1.25) rotate(8deg);
+}
+
+.skill-card h3{
+    text-align:center;
+    margin-bottom:18px;
+}
