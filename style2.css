@@ -583,6 +583,47 @@ line-height:1.8;
 /* ===========================================
    SKILLS
 =========================================== */
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.skill-card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:24px;
+    padding:35px;
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+    transition:.45s;
+    overflow:hidden;
+    position:relative;
+}
+
+.skill-card::before{
+    content:"";
+    position:absolute;
+    top:-120px;
+    right:-120px;
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    background:rgba(79,172,254,.12);
+    transition:.5s;
+}
+
+.skill-card:hover::before{
+    transform:scale(1.5);
+}
+
+.skill-card:hover{
+    transform:translateY(-12px) scale(1.03);
+    box-shadow:
+    0 20px 45px rgba(79,172,254,.25),
+    0 0 30px rgba(123,97,255,.25);
+}
 
 .bar{
     width:100%;
