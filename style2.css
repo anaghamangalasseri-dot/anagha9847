@@ -1186,3 +1186,99 @@ opacity:1;
     margin-bottom:18px;
     font-size:22px;
 }
+/*========== PREMIUM SKILLS SECTION ==========*/
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.skill-card{
+    position:relative;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:22px;
+    padding:35px 25px;
+    overflow:hidden;
+    text-align:center;
+    transition:.45s ease;
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+}
+
+.skill-card::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(135deg,
+        rgba(79,172,254,.18),
+        rgba(123,97,255,.15));
+    opacity:0;
+    transition:.4s;
+}
+
+.skill-card:hover::before{
+    opacity:1;
+}
+
+.skill-card:hover{
+    transform:translateY(-12px) scale(1.04);
+    box-shadow:
+        0 0 25px rgba(79,172,254,.35),
+        0 0 45px rgba(123,97,255,.25);
+}
+
+.skill-card i{
+    font-size:65px;
+    margin-bottom:18px;
+    display:block;
+    position:relative;
+    z-index:2;
+    transition:.5s;
+}
+
+.skill-card:hover i{
+    transform:rotate(10deg) scale(1.2);
+}
+
+.skill-card h3{
+    font-size:24px;
+    margin-bottom:20px;
+    position:relative;
+    z-index:2;
+}
+
+.skill-card p{
+    margin-top:15px;
+    font-size:15px;
+    color:#8fdcff;
+    font-weight:600;
+    position:relative;
+    z-index:2;
+}
+
+.bar{
+    width:100%;
+    height:10px;
+    border-radius:30px;
+    background:rgba(255,255,255,.08);
+    overflow:hidden;
+    position:relative;
+    z-index:2;
+}
+
+.bar span{
+    display:block;
+    height:100%;
+    border-radius:30px;
+    background:linear-gradient(90deg,#4facfe,#7b61ff);
+    animation:progress 2s ease;
+}
+
+@keyframes progress{
+    from{
+        width:0;
+    }
+}
