@@ -584,58 +584,37 @@ line-height:1.8;
    SKILLS
 =========================================== */
 
-.skills-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:28px;
-}
-
-.skill-card{
-background:var(--card);
-backdrop-filter:blur(20px);
-border:1px solid var(--border);
-border-radius:20px;
-padding:25px;
-box-shadow:var(--shadow);
-transition:.4s;
-}
-
-.skill-card:hover{
-transform:translateY(-8px);
-}
-
-.skill-card h3{
-display:flex;
-justify-content:space-between;
-margin-bottom:15px;
-font-size:18px;
-}
-
 .bar{
-width:100%;
-height:12px;
-border-radius:30px;
-background:rgba(255,255,255,.08);
-overflow:hidden;
+    width:100%;
+    height:12px;
+    background:rgba(255,255,255,.08);
+    border-radius:30px;
+    overflow:hidden;
 }
 
 .bar span{
-display:block;
-height:100%;
-width:0;
-border-radius:30px;
-background:linear-gradient(90deg,
-var(--primary),
-var(--secondary));
-animation:fillBar 2s forwards;
+    display:block;
+    height:100%;
+    border-radius:30px;
+    background:linear-gradient(90deg,#4facfe,#7b61ff);
+    transform:scaleX(0);
+    transform-origin:left;
+    animation:growBar 1.8s ease forwards;
 }
 
-@keyframes fillBar{
-to{
-width:100%;
-}
+@keyframes growBar{
+    to{
+        transform:scaleX(1);
+    }
 }
 
+/* Skill Percentages */
+.skill-card:nth-child(1) .bar span{width:95%;}
+.skill-card:nth-child(2) .bar span{width:90%;}
+.skill-card:nth-child(3) .bar span{width:75%;}
+.skill-card:nth-child(4) .bar span{width:85%;}
+.skill-card:nth-child(5) .bar span{width:80%;}
+.skill-card:nth-child(6) .bar span{width:85%;}
 /* Individual widths */
 
 .skill-card:nth-child(1) span{width:95%;}
@@ -1147,4 +1126,22 @@ opacity:1;
 .skill-card h3{
     text-align:center;
     margin-bottom:18px;
+}
+.skill-card i{
+    font-size:60px;
+    display:block;
+    margin-bottom:20px;
+    text-align:center;
+    transition:.5s;
+    filter:drop-shadow(0 0 15px rgba(79,172,254,.4));
+}
+
+.skill-card:hover i{
+    transform:scale(1.25) rotate(10deg);
+}
+
+.skill-card h3{
+    text-align:center;
+    margin-bottom:18px;
+    font-size:22px;
 }
