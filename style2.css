@@ -1395,3 +1395,55 @@ opacity:1;
     0%,100%{ transform:translateY(0); }
     50%{ transform:translateY(-18px); }
 }
+/* Floating Tech Icons */
+
+.floating-icons i{
+    position:absolute;
+    font-size:38px;
+    z-index:10;
+    animation:floatIcon 4s ease-in-out infinite;
+    filter:drop-shadow(0 0 12px rgba(255,255,255,.5));
+}
+
+.html{
+    color:#E34F26;
+    top:8%;
+    left:-10px;
+}
+
+.css{
+    color:#1572B6;
+    top:15%;
+    right:-10px;
+    animation-delay:.5s;
+}
+
+.js{
+    color:#F7DF1E;
+    bottom:20%;
+    left:-15px;
+    animation-delay:1s;
+}
+
+.c{
+    color:#00C853;
+    bottom:8%;
+    right:-10px;
+    animation-delay:1.5s;
+}
+
+.sql{
+    color:#00BCD4;
+    top:50%;
+    right:-25px;
+    animation-delay:2s;
+}
+
+@keyframes floatIcon{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+}
