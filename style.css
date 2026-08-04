@@ -204,15 +204,21 @@ gap:70px;
     margin-bottom:10px;
     white-space:nowrap;
     font-weight:800;
+    letter-spacing:-2px;
+    animation:heroFade 1.2s ease;
 }
 
 .hero span{
 
-background:linear-gradient(90deg,#4facfe,#7b61ff);
+background:linear-gradient(90deg,#4facfe,#7b61ff,#00ffd5,#4facfe);
+background-size:300%;
 
 -webkit-background-clip:text;
-
 -webkit-text-fill-color:transparent;
+
+animation:gradientMove 5s linear infinite;
+
+filter:drop-shadow(0 0 18px rgba(79,172,254,.45));
 
 }
 
@@ -273,8 +279,8 @@ cursor:pointer;
 .btn:hover{
     transform:translateY(-8px) scale(1.05);
     box-shadow:
-        0 0 20px rgba(79,172,254,.6),
-        0 0 40px rgba(123,97,255,.4);
+        0 0 25px rgba(79,172,254,.7),
+        0 0 55px rgba(123,97,255,.5);
 }
 
 .btn2{
@@ -1341,5 +1347,24 @@ opacity:1;
     }
     50%{
         transform:translateY(-18px);
+    }
+}
+@keyframes gradientMove{
+    from{
+        background-position:0%;
+    }
+    to{
+        background-position:300%;
+    }
+}
+
+@keyframes heroFade{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
     }
 }
