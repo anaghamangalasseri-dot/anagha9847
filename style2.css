@@ -1368,3 +1368,53 @@ opacity:1;
         transform:translateY(0);
     }
 }
+/*==============================
+ PREMIUM HERO BACKGROUND
+==============================*/
+
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:radial-gradient(circle,rgba(79,172,254,.22),transparent 70%);
+    top:-150px;
+    left:-150px;
+    animation:moveLight1 8s ease-in-out infinite;
+    pointer-events:none;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:radial-gradient(circle,rgba(123,97,255,.20),transparent 70%);
+    bottom:-150px;
+    right:-150px;
+    animation:moveLight2 10s ease-in-out infinite;
+    pointer-events:none;
+}
+
+@keyframes moveLight1{
+    0%,100%{
+        transform:translate(0,0);
+    }
+    50%{
+        transform:translate(80px,60px);
+    }
+}
+
+@keyframes moveLight2{
+    0%,100%{
+        transform:translate(0,0);
+    }
+    50%{
+        transform:translate(-80px,-60px);
+    }
+}
